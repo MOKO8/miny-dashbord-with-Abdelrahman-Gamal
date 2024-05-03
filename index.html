@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/framework.css">
+  <title>Dashboard | Abdelrahman Gamal</title>
+</head>
+<body class="p-relative h-vh">
+  <div id="win" class="win p-absolute fs-70 c-white d-none ">You Win</div>
+  <div class="menu">
+    <ul>
+      <li class="profile">
+        <div class="img-box">
+          <img src="imgs/user-200x300.webp" alt="imgs for profile">
+        </div>
+        <h2>MOKO</h2>
+      </li>
+      <li>
+        <a class="active" href="#">
+          <i class="fas fa-home"></i>
+          <p>Dashboard</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-user-group"></i>
+          <p>clients</p>
+        </a>        
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-table"></i>
+          <p>products</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-chart-pie"></i>
+          <p>charts</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-table"></i>
+          <p>posts</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-pen"></i>
+          <p>products</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-star"></i>
+          <p>favoite</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-cog"></i>
+          <p>settings</p>
+        </a>
+      </li>
+      <li class="log-out">
+        <a href="#">
+          <i class="fas fa-sign-out"></i>
+          <p>Log Out</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="title-info">
+      <P>Dashboard</P>
+      <i class="fas fa-chart-bar"></i>
+    </div>
+    <div class="data-info">
+      <div class="box p-relative">
+        <i class="fas fa-user"></i>
+          <span class="data">
+            <p>user</p>
+            <span id="number-user"></span>
+          </span>
+      </div>
+      <div class="box">
+        <i class="fas fa-pen"></i>
+          <span class="data">
+            <p>posts</p>
+            <span id="number-posts">100</span>
+          </span>
+      </div>
+      <div class="box">
+        <i class="fas fa-table"></i>
+          <span class="data">
+            <p>products</p>
+            <span id="number-product"></span>
+          </span>
+      </div>
+      <div class="box">
+        <i class="fas fa-dollar"></i>
+          <span class="data">
+            <p>revene</p>
+            <span id="price">$</span>
+          </span>
+      </div>
+    </div>
+    <div class="data-info2">
+      <div class="box">
+        <button id="user-btn">add fake users +</button>
+      </div>
+      <div class="box">
+        <button id="posts-btn">remove posts -</button>
+      </div>
+      <div class="box">
+        <button id="product-btn">add products +</button>
+      </div>
+    </div>
+    <div class="title-info">
+      <P>products</P>
+      <i class="fas fa-table"></i>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>price</th>
+          <th>count</th>
+        </tr>
+      </thead>
+      <tbody id="tableB">
+
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
